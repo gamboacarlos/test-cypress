@@ -2,9 +2,12 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { useCharactersList } from './hooks/useCharactersList'
 
 function App() {
   const [count, setCount] = useState(0)
+
+const { data } = useCharactersList()
 
   return (
     <>
